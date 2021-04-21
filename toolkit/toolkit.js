@@ -37,7 +37,7 @@
 
 // for (let i = 0; i < array1.length; i++){
 //     sums.push(array1[i] + array2[i])
-    
+
 // }
 //     sums.push(array2[array2.length-1])
 //     console.log(sums)
@@ -45,10 +45,41 @@
 
 // Exercise 5
 
-const scores = [73, 35, 40, 68, 67, 91, 42, 48, 39, 55, 21, 95];
+// const scores = [73, 35, 40, 68, 67, 91, 42, 48, 39, 55, 21, 95];
 
-for (let i = 0; i < scores.length; i++){
-    if(scores[i] >=40 ) {
-        console.log(scores[i])
+// for (let i = 0; i < scores.length; i++) {
+//     if (scores[i] >= 40) {
+//         console.log(scores[i])
+//     }
+// }
+
+// Exercise 6
+
+// const scores = [73, 35, 68, 67, 91, 42, 48, 55, 21, 95];
+
+// let highestNum = Math.max(...scores);
+// console.log(highestNum);
+
+// let highestNum = 0;
+
+// for (let i = 0; i < scores.length; i++) {
+//     if(highestNum < scores[i]) {
+//         highestNum = scores[i]
+//     }
+    
+// }
+// console.log(highestNum);
+
+// Exercise 7
+
+const scores = [73, 35, 68, 67, 91, 42, 48, 55, 21, 95];
+
+let lowestNum = scores[0];
+
+for (let i = 1; i < scores.length; i++) {
+    if(lowestNum > scores[i]) {
+        lowestNum = scores[i]
     }
+
 }
+console.log(lowestNum);
