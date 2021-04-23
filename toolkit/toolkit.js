@@ -102,4 +102,23 @@
 //     }
 
 
+// Exercise 9
+
+// const scores = [40, 40, 40];
+// const scores1 = [];
+
+
+// let total = 0;
+//     let average = 0;
+//     if ( scores.length > 0) {
+//         for( let i = 0; i < scores.length; i++) {
+//             total += scores[i]
+//             average = total / scores.length;
+
+//         }
+//         console.log(average)
+//     }
+
+
+
 
