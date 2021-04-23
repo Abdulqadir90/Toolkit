@@ -139,6 +139,28 @@
 //         console.log("not working");
 //     }
 
+// Exercise 11
+
+// const scores = [73, 35, 68, 67, 91, 42, 48, 55, 21, 95];
+
+// let total = 0;
+//     let average = 0;
+
+//     for( let i = 0; i < scores.length; i++) {
+//     total += scores[i]
+//     average = total / scores.length;
+
+//     }
+
+//     for( let i = 0; i < scores.length; i++) {
+//         if(scores[i] < average + 10 && scores[i] > average - 10){
+//             console.log(scores[i]);
+//         }
+//     }
+
+//     console.log(average);
+
+
 
 
 
