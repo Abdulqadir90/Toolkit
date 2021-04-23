@@ -72,14 +72,34 @@
 
 // Exercise 7
 
-const scores = [73, 35, 68, 67, 91, 42, 48, 55, 21, 95];
+// const scores = [73, 35, 68, 67, 91, 42, 48, 55, 21, 95];
 
-let lowestNum = scores[0];
+// let lowestNum = scores[0];
 
-for (let i = 1; i < scores.length; i++) {
-    if(lowestNum > scores[i]) {
-        lowestNum = scores[i]
-    }
+// for (let i = 1; i < scores.length; i++) {
+//     if(lowestNum > scores[i]) {
+//        lowestNum = scores[i]
+//        console.log(lowestNum)
+// }
+// }
 
-}
-console.log(lowestNum);
+
+// Exercise 8
+
+// const scores = [73, 35, 68, 67, 91, 42, 48, 55, 21, 95];
+// const scores1 = [];
+
+
+// let total = 0;
+//     let average = 0;
+//     if ( scores.length > 0) {
+//         for( let i = 0; i < scores.length; i++) {
+//             total += scores[i]
+//             average = total / scores.length;
+
+//         }
+//         console.log(average)
+//     }
+
+
+
