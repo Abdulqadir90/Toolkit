@@ -172,7 +172,7 @@ const scores = [73, 35, 68, 67, 20, 91, 42, 48, 55, 21, 95];
             
         }
     }
-    console.log(scores)
+    console.log(scores) 
 
 
 
