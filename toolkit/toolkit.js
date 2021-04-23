@@ -176,20 +176,37 @@
 
 // Exercise 13 
 
-const scores = [73, 35, 68, 67, 20, 91, 42, 48, 55, 21, 95];
+// const scores = [73, 35, 68, 67, 20, 91, 42, 48, 55, 21, 95];
 
+
+// for (let i = 0; i < scores.length; i++) {
+//     if (scores[i] < scores[i+1]){
+//         largest = scores[10];
+//         scores[10] = scores[0];
+//         scores[0] = largest;
+//         smallest = scores[4];
+//         scores[4] = scores[0];
+//         scores[0] = smallest;
+
+//     }
+
+// }
+// console.log(scores)
+
+// Exercise 14
+
+const scores = [73, 35, 68, 67, 20, 91, 42, 48, 55, 21, 95];
 
 for (let i = 0; i < scores.length; i++) {
     if (scores[i] < scores[i+1]){
-        largest = scores[10];
-        scores[10] = scores[0];
-        scores[0] = largest;
         smallest = scores[4];
-        scores[4] = scores[0];
+        scores[0] = scores[0];
         scores[0] = smallest;
+        largest = scores[0];
+        scores[0] = scores[10];
+        scores[0] = largest;
 
     }
 
 }
 console.log(scores)
-
