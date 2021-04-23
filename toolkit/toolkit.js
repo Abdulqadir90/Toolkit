@@ -160,7 +160,19 @@
 
 //     console.log(average);
 
+// Exercise 12
 
+const scores = [73, 35, 68, 67, 20, 91, 42, 48, 55, 21, 95];
+
+    let smallNum = 0;
+
+    for (let i = 0; i < scores.length; i++) {
+        if (scores[i] < scores[i+1] ) {
+            smallNum = scores[i];
+            
+        }
+    }
+    console.log(scores)
 
 
 
