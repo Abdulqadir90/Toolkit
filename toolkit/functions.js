@@ -32,20 +32,53 @@
 // 5 console.log(timeBack(23, 50, 15)); // logs ’00:05’
 
 
-function timeBack(hours, min, lengthOfBreakInMinutes) {
-    let min1 = min + lengthOfBreakInMinutes;
-    let hours1 = hours;
-    if(min1 >= 60 ){
-        hours1 = hours1 + 1;
+// function timeBack(hours, min, lengthOfBreakInMinutes) {
+//     let min1 = min + lengthOfBreakInMinutes;
+//     let hours1 = hours;
+//     if(min1 >= 60 ){
+//         hours1 = hours1 + 1;
 
-        min1  = min1 - 60;
-    }
-    return `timeBack: ${hours1}: ${min1}`;
+//         min1  = min1 - 60;
+//     }
+//     return `timeBack: ${hours1}: ${min1}`;
     
-}
+// }
 
-console.log(timeBack(11, 30, 15));
-console.log(timeBack(11, 50, 15)); 
-console.log(timeBack(11, 45, 15)); 
-console.log(timeBack(12, 45, 15)); 
-console.log(timeBack(23, 50, 15)); 
+// console.log(timeBack(11, 30, 15));
+// console.log(timeBack(11, 50, 15)); 
+// console.log(timeBack(11, 45, 15)); 
+// console.log(timeBack(12, 45, 15)); 
+// console.log(timeBack(23, 50, 15)); 
+
+// Exercises using Functions
+// 1. Using the solution above to write a program to implement the following version of the
+// game:
+// • The players decide how many dice to throw
+// • The score is calculated as 1 point for each even number thrown plus 1 bonus
+// point for each 6 thrown
+// Make sure you use functions in your solution.
+// 2. Write a function called findLargest that will find and return the largest value in an array
+// of numbers (see your solution to Exercise 6 above). Before you start, think about the
+// parameter you will provide to this function. Here are two different ways your function
+// can be called:
+// 1 let large1 = findLargest ([5, 8, 3, 1, 0]) ;
+// 2 let large2 = findLargest ([10, 10, 9, 8, 11]);
+// The first version should return 8 and the second one should return 11. test your
+// function to check the correct value is returned
+
+// let large1 = findLargest ([5, 8, 3, 1, 0]) ;
+// let large2 = findLargest ([10, 10, 9, 8, 11]);
+
+// function findLargest(list) {
+//     let largest = [0];
+//     for(let index = 1; index < list.length; index++) {
+//         if(list[index] > largest) {
+//             largest = list[index];
+//         }
+//     } return largest;
+// }
+
+// let large1 = findLargest([5, 8, 3, 1, 0]);
+// console.log(large1)
+
+
