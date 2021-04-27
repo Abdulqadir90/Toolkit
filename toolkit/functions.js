@@ -81,4 +81,10 @@
 // let large1 = findLargest([5, 8, 3, 1, 0]);
 // console.log(large1)
 
-
+// With function method
+// function findLargest(arr) {
+//     let large1 = Math.max.apply(Math, arr);
+//     return large1;
+// }
+// console.log(findLargest([5, 8, 3, 0]));
+// console.log(findLargest([10, 10, 9, 8, 11]));
