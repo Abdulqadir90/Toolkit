@@ -70,7 +70,7 @@
 // let large2 = findLargest ([10, 10, 9, 8, 11]);
 
 // function findLargest(list) {
-//     let largest = [0];
+//     let largest = list[0];
 //     for(let index = 1; index < list.length; index++) {
 //         if(list[index] > largest) {
 //             largest = list[index];
@@ -88,3 +88,24 @@
 // }
 // console.log(findLargest([5, 8, 3, 0]));
 // console.log(findLargest([10, 10, 9, 8, 11]));
+
+// 3. Write a function called drawTriangle that will produce the triangle output in Exercise 2
+// from the set of exercises above. Use a parameter that will determine how many rows
+// of stars to draw. If you call drawTriangle(5), it should draw the following output:
+// *
+// **
+// ***
+// ****
+// *****
+// Does this function need to return anything
+
+function drawTriangle(count) {
+    let row = "";
+    for(let index = 0; index < count; index++ ) {
+            row += "*";
+            console.log(row);
+    }
+    return row;
+}
+
+drawTriangle(5);
