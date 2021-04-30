@@ -174,12 +174,40 @@
 // 1. Add a function called circumference to the circle object described above. This function
 // should return the circumference of the circle calculated by the formula 2 ∗ π ∗ radius.
 
-let circle = {
+// let circle = {
+//          coordinates: {
+//          x: "15",
+//          y: "150",
+//          },
+//          radius: 25,
+    
+//          area: function () {
+//              return Math.PI * (this.radius *  this.radius);
+//          },
+//          circumference: function () {
+//              return 2 * Math.PI * this.radius
+
+//         }
+// };
+
+// circle.radius =  9;
+// console.log(area = `${circle.area()}`);
+// console.log(circumference = `${circle.circumference()}`);
+
+// 2. Using the circle object as an example. Write an object to represent a rectangle. It
+// should have the following properties:
+// • x and y coordinates which represent the position of the top left corner of the
+// rectangle
+// • a width
+// • a height.
+
+let rectangle = {
          coordinates: {
-         x: "15",
+         x: "100",
          y: "150",
          },
-         radius: 25,
+         width: 200,
+         height: 100, 
     
          area: function () {
              return Math.PI * (this.radius *  this.radius);
@@ -190,6 +218,3 @@ let circle = {
         }
 };
 
-// circle.radius =  9;
-// console.log(area = `${circle.area()}`);
-console.log(circumference = `${circle.circumference()}`);
