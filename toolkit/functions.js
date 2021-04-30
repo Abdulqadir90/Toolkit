@@ -218,3 +218,8 @@ let rectangle = {
         }
 };
 
+// 3. Add a function to your rectangle object that will calculate and return the area of the
+// rectangle.
+
+rectangle.radius =  9;
+console.log(area = `${rectangle.area()}`);
