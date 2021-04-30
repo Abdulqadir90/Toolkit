@@ -169,3 +169,27 @@
 // }
 
 // check('hello', 'l');
+
+// 6.3 Exercises on Objects
+// 1. Add a function called circumference to the circle object described above. This function
+// should return the circumference of the circle calculated by the formula 2 ∗ π ∗ radius.
+
+let circle = {
+         coordinates: {
+         x: "15",
+         y: "150",
+         },
+         radius: 25,
+    
+         area: function () {
+             return Math.PI * (this.radius *  this.radius);
+         },
+         circumference: function () {
+             return 2 * Math.PI * this.radius
+
+        }
+};
+
+// circle.radius =  9;
+// console.log(area = `${circle.area()}`);
+console.log(circumference = `${circle.circumference()}`);
