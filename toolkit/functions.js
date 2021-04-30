@@ -12,7 +12,7 @@
 
 // function countWords(str) {
 //         let words = str.split(" ").length;
-    
+
 //         return words;
 //     }
 
@@ -41,7 +41,7 @@
 //         min1  = min1 - 60;
 //     }
 //     return `timeBack: ${hours1}: ${min1}`;
-    
+
 // }
 
 // console.log(timeBack(11, 30, 15));
@@ -99,13 +99,30 @@
 // *****
 // Does this function need to return anything
 
-function drawTriangle(count) {
-    let row = "";
-    for(let index = 0; index < count; index++ ) {
-            row += "*";
-            console.log(row);
-    }
-    return row;
-}
+// function drawTriangle(count) {
+//     let row = "";
+//     for (let index = 0; index < count; index++) {
+//         row += "*";
+//         console.log(row);
+//     }
+//     return row;
+// }
 
-drawTriangle(5);
+// drawTriangle(5);
+
+// Write a JavaScript function called reverseIt that reverses an integer number and
+// returns the reversed value. You need to use a parameter (the function needs to know
+// the number to be reversed). You also need a return statement. Here is a test to see if
+// your function works:
+// let reversed = reverseIt(36478);
+// console.log(reversed); // expected output 87463
+// console.log(typeof reversed); // expected output: "number"
+
+// function reverseIt(num){
+//     num = num + "";
+//     let result = Number(num.split("").reverse().join(""));
+//     console.log('result', result);
+//     return result;
+// }
+// reverseIt(36478);
+
