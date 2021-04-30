@@ -126,3 +126,29 @@
 // }
 // reverseIt(36478);
 
+// Write a JavaScript function that accepts a string as a parameter and returns the
+// longest word within the string.
+// Example string : ’Web Development Tutorial’
+// Expected Output : ’Development’
+
+// function longestWord(str) { 
+//     return str.split(' ').reduce((acc, curr) => {
+//         if (curr.length > acc.length) {
+//             acc = curr;
+//         } 
+//         return acc;
+//     }, '');
+// }
+
+// function longestWord(str) { 
+//     let result = '';
+//     str = str.split(' ');
+//     for (let i = 0; i<str.length; i++) {
+//         if (str[i].length > result.length) {
+//             result = str[i];
+//         }
+//     }
+//     return result;
+// }
+// longestWord('Web Development Tutorial');
+
