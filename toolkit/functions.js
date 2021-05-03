@@ -32,23 +32,25 @@
 // 5 console.log(timeBack(23, 50, 15)); // logs ’00:05’
 
 
-// function timeBack(hours, min, lengthOfBreakInMinutes) {
-//     let min1 = min + lengthOfBreakInMinutes;
-//     let hours1 = hours;
-//     if(min1 >= 60 ){
-//         hours1 = hours1 + 1;
+function timeBack(hours, min, lengthOfBreakInMinutes) {
+    let min1 = min + lengthOfBreakInMinutes;
+    let hours1 = hours;
+    if(min1 >= 60 ){
+        hours1 = hours1 + 1;
 
-//         min1  = min1 - 60;
-//     }
-//     return `timeBack: ${hours1}: ${min1}`;
+        min1  = min1 - 60;
+        if(hours1 > 23)
+        hours1 = hours1 -24;
+    }
+    return `timeBack: ${hours1}: ${min1}`;
 
-// }
+}
 
-// console.log(timeBack(11, 30, 15));
-// console.log(timeBack(11, 50, 15)); 
-// console.log(timeBack(11, 45, 15)); 
-// console.log(timeBack(12, 45, 15)); 
-// console.log(timeBack(23, 50, 15)); 
+console.log(timeBack(11, 30, 15));
+console.log(timeBack(11, 50, 15)); 
+console.log(timeBack(11, 45, 15)); 
+console.log(timeBack(12, 45, 15)); 
+console.log(timeBack(23, 50, 15)); 
 
 // Exercises using Functions
 // 1. Using the solution above to write a program to implement the following version of the
@@ -201,25 +203,25 @@
 // • a width
 // • a height.
 
-let rectangle = {
-         coordinates: {
-         x: "100",
-         y: "150",
-         },
-         width: 200,
-         height: 100, 
+// let rectangle = {
+//          coordinates: {
+//          x: "100",
+//          y: "150",
+//          },
+//          width: 200,
+//          height: 100, 
     
-         area: function () {
-             return Math.PI * (this.radius *  this.radius);
-         },
-         circumference: function () {
-             return 2 * Math.PI * this.radius
+//          area: function () {
+//              return Math.PI * (this.radius *  this.radius);
+//          },
+//          circumference: function () {
+//              return 2 * Math.PI * this.radius
 
-        }
-};
+//         }
+// };
 
 // 3. Add a function to your rectangle object that will calculate and return the area of the
 // rectangle.
 
-rectangle.radius =  9;
-console.log(area = `${rectangle.area()}`);
+// rectangle.radius =  9;
+// console.log(area = `${rectangle.area()}`);
