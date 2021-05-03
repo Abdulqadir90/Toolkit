@@ -32,25 +32,25 @@
 // 5 console.log(timeBack(23, 50, 15)); // logs ’00:05’
 
 
-function timeBack(hours, min, lengthOfBreakInMinutes) {
-    let min1 = min + lengthOfBreakInMinutes;
-    let hours1 = hours;
-    if(min1 >= 60 ){
-        hours1 = hours1 + 1;
+// function timeBack(hours, min, lengthOfBreakInMinutes) {
+//     let min1 = min + lengthOfBreakInMinutes;
+//     let hours1 = hours;
+//     if(min1 >= 60 ){
+//         hours1 = hours1 + 1;
 
-        min1  = min1 - 60;
-        if(hours1 > 23)
-        hours1 = hours1 -24;
-    }
-    return `timeBack: ${hours1}: ${min1}`;
+//         min1  = min1 - 60;
+//         if(hours1 > 23)
+//         hours1 = hours1 -24;
+//     }
+//     return `timeBack: ${hours1}: ${min1}`;
 
-}
+// }
 
-console.log(timeBack(11, 30, 15));
-console.log(timeBack(11, 50, 15)); 
-console.log(timeBack(11, 45, 15)); 
-console.log(timeBack(12, 45, 15)); 
-console.log(timeBack(23, 50, 15)); 
+// console.log(timeBack(11, 30, 15));
+// console.log(timeBack(11, 50, 15)); 
+// console.log(timeBack(11, 45, 15)); 
+// console.log(timeBack(12, 45, 15)); 
+// console.log(timeBack(23, 50, 15)); 
 
 // Exercises using Functions
 // 1. Using the solution above to write a program to implement the following version of the
@@ -111,6 +111,27 @@ console.log(timeBack(23, 50, 15));
 // }
 
 // drawTriangle(5);
+
+function drawTriangle(count) {
+    // count-1 spaces in first row, then count-2, then count-3, etc
+    for (let spaces = count - 1; spaces >= 0; spaces--) {
+      let row = "";
+      for (let index = 0; index < count; index++) {
+        // add spaces
+        if (index < spaces) {
+          row += " ";
+        } else {
+          // then add stars
+          row += "*";
+        }
+      }
+      // log this row
+      console.log(row);
+    }
+    //return row;
+  }
+  drawTriangle(5);
+  
 
 // Write a JavaScript function called reverseIt that reverses an integer number and
 // returns the reversed value. You need to use a parameter (the function needs to know
