@@ -162,17 +162,18 @@
 
 // Exercise 12
 
-// const scores = [73, 35, 68, 67, 20, 91, 42, 48, 55, 21, 95];
+const scores = [73, 35, 68, 67, 20, 91, 42, 48, 55, 21, 95];
 
-//     let smallNum = 0;
+    let smallNum = 0;
 
-//     for (let i = 0; i < scores.length; i++) {
-//         if (scores[i] < scores[i+1] ) {
-//             smallNum = scores[i];
-            
-//         }
-//     }
-//     console.log(scores) 
+    for (let i = 0; i < scores.length; i++) {
+        if (scores[i] < scores[i + 1]) {
+            const smallNum = scores[i];
+            scores[i] = scores[i+1];
+            scores[i+1] = smallNum;
+          }
+        }
+    console.log(scores) 
 
 // Exercise 13 
 
@@ -195,18 +196,18 @@
 
 // Exercise 14
 
-const scores = [73, 35, 68, 67, 20, 91, 42, 48, 55, 21, 95];
+// const scores = [73, 35, 68, 67, 20, 91, 42, 48, 55, 21, 95];
 
-for (let i = 0; i < scores.length; i++) {
-    if (scores[i] < scores[i+1]){
-        smallest = scores[4];
-        scores[0] = scores[0];
-        scores[0] = smallest;
-        largest = scores[0];
-        scores[0] = scores[10];
-        scores[0] = largest;
+// for (let i = 0; i < scores.length; i++) {
+//     if (scores[i] < scores[i+1]){
+//         smallest = scores[4];
+//         scores[0] = scores[0];
+//         scores[0] = smallest;
+//         largest = scores[0];
+//         scores[0] = scores[10];
+//         scores[0] = largest;
 
-    }
+//     }
 
-}
-console.log(scores)
+// }
+// console.log(scores)
