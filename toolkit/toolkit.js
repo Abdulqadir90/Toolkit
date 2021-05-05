@@ -194,17 +194,17 @@
 // }
 // console.log(scores)
 
-const scores = [73, 35, 68, 67, 20, 91, 42, 48, 55, 21, 95];
-for (let finish = scores.length; finish > 0; finish--) {
-  for (let i = 0; i < finish; i++) {
-    if (scores[i] < scores[i + 1]) {
-      const smallNum = scores[i];
-      scores[i] = scores[i + 1];
-      scores[i + 1] = smallNum;
-    }
-  }
-}
-console.log(scores);
+// const scores = [73, 35, 68, 67, 20, 91, 42, 48, 55, 21, 95];
+// for (let finish = scores.length; finish > 0; finish--) {
+//   for (let i = 0; i < finish; i++) {
+//     if (scores[i] < scores[i + 1]) {
+//       const smallNum = scores[i];
+//       scores[i] = scores[i + 1];
+//       scores[i + 1] = smallNum;
+//     }
+//   }
+// }
+// console.log(scores);
 
 
 
@@ -231,3 +231,15 @@ console.log(scores);
 
 // }
 // console.log(scores)
+
+const scores = [73, 35, 68, 67, 20, 91, 42, 48, 55, 21, 95];
+for (let finish = scores.length; finish > 0; finish--) {
+  for (let i = 0; i < finish; i++) {
+    if (scores[i] > scores[i + 1]) {  
+      const smallNum = scores[i];
+      scores[i] = scores[i + 1];
+      scores[i + 1] = smallNum;
+    }
+  }
+}
+console.log(scores);
