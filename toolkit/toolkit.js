@@ -162,18 +162,18 @@
 
 // Exercise 12
 
-const scores = [73, 35, 68, 67, 20, 91, 42, 48, 55, 21, 95];
+// const scores = [73, 35, 68, 67, 20, 91, 42, 48, 55, 21, 95];
 
-    let smallNum = 0;
+//     let smallNum = 0;
 
-    for (let i = 0; i < scores.length; i++) {
-        if (scores[i] < scores[i + 1]) {
-            const smallNum = scores[i];
-            scores[i] = scores[i+1];
-            scores[i+1] = smallNum;
-          }
-        }
-    console.log(scores) 
+//     for (let i = 0; i < scores.length; i++) {
+//         if (scores[i] < scores[i + 1]) {
+//             const smallNum = scores[i];
+//             scores[i] = scores[i+1];
+//             scores[i+1] = smallNum;
+//           }
+//         }
+//     console.log(scores) 
 
 // Exercise 13 
 
@@ -193,6 +193,26 @@ const scores = [73, 35, 68, 67, 20, 91, 42, 48, 55, 21, 95];
 
 // }
 // console.log(scores)
+
+const scores = [73, 35, 68, 67, 20, 91, 42, 48, 55, 21, 95];
+for (let finish = scores.length; finish > 0; finish--) {
+  for (let i = 0; i < finish; i++) {
+    if (scores[i] < scores[i + 1]) {
+      const smallNum = scores[i];
+      scores[i] = scores[i + 1];
+      scores[i + 1] = smallNum;
+    }
+  }
+}
+console.log(scores);
+
+
+
+
+
+
+
+
 
 // Exercise 14
 
