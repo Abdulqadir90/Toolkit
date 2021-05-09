@@ -246,3 +246,11 @@ function drawTriangle(count) {
 
 // rectangle.radius =  9;
 // console.log(area = `${rectangle.area()}`);
+
+// proper way below
+
+circle.radius = 9;
+let area = circle.area();
+let circumference = circle.circumference();
+console.log(`Area is ${area}`);
+console.log(`Circumference is ${circumference}`);
