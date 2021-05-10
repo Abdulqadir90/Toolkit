@@ -268,4 +268,7 @@ let rectangle = {
   area: function () {
     return width * height;
   },
+  perimeter: function () {
+    return 2 * width + 2 * height;
+  },
 
