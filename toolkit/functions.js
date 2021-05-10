@@ -265,10 +265,18 @@ let rectangle = {
   },
   width: 200,
   height: 100,
-  area: function () {
-    return width * height;
+  area: function () {               
+    return width * height;  
   },
   perimeter: function () {
     return 2 * width + 2 * height;
   },
+  isInside: function (px, py) {
+    if (px >= x && px <= x + width && py >= y && py <= y+height) {
+      return true;
+    } else {
+      return false;
+    }
+  }  
+};
 
