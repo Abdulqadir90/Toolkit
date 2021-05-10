@@ -256,7 +256,7 @@ function drawTriangle(count) {
 
 // proper way below
 
-// area of the rectangle
+// area, perimeter and function to return true when coordinates are inside the rectangle and false 
 
 let rectangle = {
   coordinates: {
