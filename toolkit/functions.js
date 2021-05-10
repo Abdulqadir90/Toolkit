@@ -217,6 +217,13 @@ function drawTriangle(count) {
 // console.log(area = `${circle.area()}`);
 // console.log(circumference = `${circle.circumference()}`);
 
+// circle.radius = 9;
+// let area = circle.area();
+// let circumference = circle.circumference();
+// console.log(`Area is ${area}`);
+// console.log(`Circumference is ${circumference}`);
+
+
 // 2. Using the circle object as an example. Write an object to represent a rectangle. It
 // should have the following properties:
 // • x and y coordinates which represent the position of the top left corner of the
@@ -249,8 +256,16 @@ function drawTriangle(count) {
 
 // proper way below
 
-circle.radius = 9;
-let area = circle.area();
-let circumference = circle.circumference();
-console.log(`Area is ${area}`);
-console.log(`Circumference is ${circumference}`);
+// area of the rectangle
+
+let rectangle = {
+  coordinates: {
+    x: "100",
+    y: "150",
+  },
+  width: 200,
+  height: 100,
+  area: function () {
+    return width * height;
+  },
+
